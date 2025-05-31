@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/gerenciarTurmas.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Sistema de Matrícula</title>
+</head>
+
+<body>
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Painel Administrativo</a></li>
+                <li><a href="listaEstudante.html"><i class="fas fa-user-graduate"></i> Alunos Matriculados</a></li>
+                <li><a href="professor.html"><i class="fas fa-chalkboard-teacher"></i>Professores</a></li>
+                <li><a href="pagamento.html"><i class="fas fa-coins"></i> Pagamento</a></li>
+                <li><a href="biblioteca.html"><i class="fas fa-book"></i> Biblioteca</a></li>
+                <li><a href="transporte.html"><i class="fas fa-bus"></i> Transporte</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+        <h1>📋 Matrícula de Alunos</h1>
+
+        <form id="formMatricula">
+            <input type="text" id="nomeAluno" placeholder="Nome do Aluno" required />
+            <input type="text" id="cpfAluno" placeholder="CPF" required />
+            <input type="date" id="dataNascimento" required />
+            <select id="cursoAluno" required>
+                <option value="">Selecione o Curso</option>
+                <option value="Informática">Informática</option>
+                <option value="Excel Avançado">Excel Avançado</option>
+                <option value="Auto Cad">Auto Cad</option>
+                <option value="Administração">Administração</option>
+                <option value="Inglês">Inglês</option>
+                <option value="Mecânica de Autos">Mecânica de Autos</option>
+                <option value="Eletricidade de Autos">Eletricidade de Autos</option>
+                <option value="InsulFilm">InsulFilm</option>
+            </select>
+            <button type="submit">Matricular Aluno</button>
+        </form>
+
+        
+    </main>
+
+    <script src="../js/gerenciarTurmas.js"></script>
+
+</body>
+
+</html>

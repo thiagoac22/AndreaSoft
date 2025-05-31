@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cadastrarCursos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />    
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </div>            
+            <ul>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Painel Administrativo</a></li>
+                <li><a href="listaEstudante.html"><i class="fas fa-user-graduate"></i> Alunos Matriculados</a></li>
+                <li><a href="professor.html"><i class="fas fa-chalkboard-teacher"></i>Professores</a></li>
+                <li><a href="pagamento.html"><i class="fas fa-coins"></i> Pagamento</a></li>
+                <li><a href="biblioteca.html"><i class="fas fa-book"></i> Biblioteca</a></li>
+                <li><a href="transporte.html"><i class="fas fa-bus"></i> Transporte</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Cadastrar Curso</h2>
+            <form id="formCurso">
+                <input type="text" id="nomeCurso" placeholder="Nome do Curso" required />
+                <input type="text" id="duracaoCurso" placeholder="Duração (ex: 6 meses)" required />
+                <button type="submit">Adicionar Curso</button>
+            </form>
+
+            <h3>Cursos Cadastrados</h3>
+            <table border="1" id="tabelaCursos">
+                <thead>
+                    <tr>
+                        <th>Nome do Curso</th>
+                        <th>Duração</th>
+                        <th class="acao">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cursos aparecerão aqui -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="../js/cadastrarCursos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos</title>
+    <link rel="stylesheet" href="../css/avisos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="main-container">
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Painel Administrativo</a></li>
+                <li><a href="listaEstudante.html"><i class="fas fa-user-graduate"></i> Alunos Matriculados</a></li>
+                <li><a href="professor.html"><i class="fas fa-chalkboard-teacher"></i>Professores</a></li>
+                <li><a href="pagamento.html"><i class="fas fa-coins"></i> Pagamento</a></li>
+                <li><a href="biblioteca.html"><i class="fas fa-book"></i> Biblioteca</a></li>
+                <li><a href="transporte.html"><i class="fas fa-bus"></i> Transporte</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h1>Gerar Declaração de Saída Antecipada</h1>
+
+        <label for="nomeAluno">Nome do Aluno:</label>
+        <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" />
+
+        <label for="serieAluno">Série / Turma:</label>
+        <input type="text" id="serieAluno" placeholder="Digite a série ou turma" />
+
+        <label for="responsavel">Nome do Responsável:</label>
+        <input type="text" id="responsavel" placeholder="Digite o nome do responsável" />
+
+        <label for="motivo">Motivo da Saída:</label>
+        <input type="text" id="motivo" placeholder="Digite o motivo da saída" />
+
+        <label for="dataSaida">Data da Saída:</label>
+        <input type="date" id="dataSaida" />
+
+        <button onclick="gerarDeclaracao()">Gerar Declaração</button>
+
+        <div id="declaracao" style="display:none; margin-top:20px;"></div>
+    </main>
+
+
+    <script src="../js/avisos.js"></script>
+
+</body>
+
+</html>

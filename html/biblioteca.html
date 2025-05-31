@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="../css/biblioteca.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/biblioteca.css">
+</head>
+
+<body class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Painel Administrativo</a></li>
+        <li><a href="listaEstudante.html"><i class="fas fa-user-graduate"></i> Alunos Matriculados</a></li>
+        <li><a href="profCadastrados.html"><i class="fas fa-chalkboard-teacher"></i> Professores</a></li>
+        <li><a href="pagamento.html"><i class="fas fa-coins"></i> Pagamento</a></li>
+        <li><a href="biblioteca.html"><i class="fas fa-book"></i> Biblioteca</a></li>
+        <li><a href="transporte.html"><i class="fas fa-bus"></i> Transporte</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section>
+      <h2>Biblioteca Virtual</h2>
+
+      <!-- Campo de pesquisa -->
+      <div class="barra-pesquisa">
+        <input type="text" id="pesquisaLivro" placeholder="Digite o nome do livro..." />
+        <button id="btnPesquisar"><i class="fas fa-search"></i></button>
+      </div>
+
+
+      <!-- Lista de livros vai aqui -->
+      <ul id="ListaLivros" class="livros-grid"></ul>
+      <button id="verMais">Ver mais</button>
+    </section>
+  </main>
+
+  <script src="../js/biblioteca.js"></script>
+</body>
+
+
+</html>

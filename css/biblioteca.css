@@ -1,0 +1,137 @@
+ /* Reset */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body,
+ html {
+   height: 100%;
+   font-family: Arial, sans-serif;
+   background-color: #f0f2f5;
+   color: #333;
+ }
+
+ /* Container com sidebar e main lado a lado */
+ .container {
+   display: flex;
+   min-height: 100vh;
+ }
+
+ /* Sidebar */
+ .sidebar {
+   width: 220px;   
+   background-color: #2f3640;
+   color: #fff;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .sidebar .logo img {
+   width: 150px;
+   height: auto;
+   margin-bottom: 30px;
+   border-radius: 5px;
+ }
+
+ .sidebar nav ul {
+   list-style: none;
+ }
+
+ .sidebar nav ul li {
+   margin-bottom: 20px;
+   font-size: 16px;
+ }
+
+ .sidebar nav ul li a {
+   color: #dcdde1;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   transition: color 0.3s ease;
+ }
+
+ .sidebar nav ul li a:hover {
+   color: #00a8ff;
+ }
+
+ .sidebar nav ul li a i {
+   margin-right: 10px;
+ }
+
+ /* Main */
+ .main {
+   flex: 1;
+   background-color: #fff;
+   padding: 20px 40px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .main h2 {
+   color: blueviolet;
+   margin-bottom: 20px;
+ }
+
+ .barra-pesquisa {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.barra-pesquisa input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.barra-pesquisa button {
+  padding: 10px 15px;
+  background-color: #00a8ff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.barra-pesquisa button:hover {
+  background-color: #0077cc;
+}
+
+ /* Lista de livros */
+ .livros-grid {
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 15px;
+ }
+
+ .livros-grid li {
+   background: #e7e7e7;
+   padding: 10px;
+   border-radius: 6px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   font-size: 14px;
+ }
+
+ #verMais {
+   margin-top: 20px;
+   padding: 10px 15px;
+   background-color: #00a8ff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 120px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+ }
+
+ #verMais:hover {
+   background-color: #0077cc;
+ }

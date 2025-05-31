@@ -1,0 +1,213 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      height: 100vh;
+    }
+
+
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .topbar .actions button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    /* Estilização dos cards no dashboard */
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #dcdde1;
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: center;
+      color: #2f3640;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card i {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #00a8ff;
+    }
+
+    .card:hover {
+      background-color: #b6cddd;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      color: #0077cc;
+    }
+
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 10px;
+      color: #2980b9;
+    }
+
+    /* style.css */
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #2f3640;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar .logo img {
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar nav ul li {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .sidebar nav ul li a {
+      color: #dcdde1;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar nav ul li a:hover {
+      color: #00a8ff;
+    }
+
+    .sidebar nav ul li i {
+      margin-right: 10px;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px;
+    }
+   
+    form {
+      max-width: 500px;
+      background: #f0f0f0;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    form input {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background-color: #00a8ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0097e6;
+    }
+
+    .logo img {
+      width: 150px;
+      /* define a largura desejada */
+      height: auto;
+      /* mantém a proporção original */
+    }
